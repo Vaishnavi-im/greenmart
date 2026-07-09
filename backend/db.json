@@ -47,6 +47,18 @@
       "role": "user",
       "walletBalance": 0,
       "loyaltyPoints": 0
+    },
+    {
+      "id": 1783575482836,
+      "firstName": "vaishnavi",
+      "lastName": "manupati",
+      "email": "vaishnavi22@gmail.com",
+      "phone": "9890099099",
+      "password": "$2b$10$mg.gcK5Pz/X2BQp3soQYFeyZBPjvN2cdRwHqK3uIpoJyC.j2FZNcG",
+      "gender": "female",
+      "role": "user",
+      "walletBalance": 0,
+      "loyaltyPoints": 0
     }
   ],
   "products": [
