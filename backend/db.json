@@ -11,6 +11,42 @@
       "role": "user",
       "walletBalance": 0,
       "loyaltyPoints": 0
+    },
+    {
+      "id": 1783572264331,
+      "firstName": "vaishu",
+      "lastName": "manupati",
+      "email": "vyshumanupati22@gmail.com",
+      "phone": "9652675066",
+      "password": "$2b$10$b9I/cIl7Qf5lwttuHOsxUuHXYMNsfnbWJ7MwthpU2.Yql7OV.5.Va",
+      "gender": "female",
+      "role": "user",
+      "walletBalance": 0,
+      "loyaltyPoints": 0
+    },
+    {
+      "id": 1783572353422,
+      "firstName": "manupati",
+      "lastName": "Vyshu",
+      "email": "b23in125@gmail.com",
+      "phone": "9652675066",
+      "password": "$2b$10$d9WpqEt5wd2RW1Z.Ha9PEeFCEvwPNqF/zTFiWJ9i5Qiy/Bv3uMFae",
+      "gender": "female",
+      "role": "user",
+      "walletBalance": 0,
+      "loyaltyPoints": 0
+    },
+    {
+      "id": 1783572444209,
+      "firstName": "vaishu",
+      "lastName": "manupati",
+      "email": "vaishnavi@gmail.com",
+      "phone": "9876543210",
+      "password": "$2b$10$EPyE.Rh.h/kyUJSEwqIgXu6C.fsxCoW5QOq.Pw7e2k4S/QHOIz3lS",
+      "gender": "female",
+      "role": "user",
+      "walletBalance": 0,
+      "loyaltyPoints": 0
     }
   ],
   "products": [

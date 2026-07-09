@@ -248,9 +248,10 @@ function toggleRPass() {
   input.type = input.type === 'password' ? 'text' : 'password';
 }
 
-// REGISTER
-function doRegister() {
+// REGISTER - Connected to Backend
+async function doRegister() {
   let fname = document.getElementById('fname').value;
+  let lname = document.getElementById('lname').value;
   let email = document.getElementById('remail').value;
   let phone = document.getElementById('phone').value;
   let pass = document.getElementById('rpassword').value;
@@ -261,7 +262,7 @@ function doRegister() {
 
   err.style.display = 'none';
 
-  if (!fname || !email || !phone || !pass || !cpass) {
+  if (!fname || !lname || !email || !phone || !pass || !cpass) {
     err.style.display = 'block';
     err.innerText = '❌ Please fill in all fields.';
     return;
@@ -282,10 +283,30 @@ function doRegister() {
     return;
   }
 
-  success.style.display = 'block';
-  setTimeout(() => {
-    window.location.href = 'login.html';
-  }, 2000);
+  try {
+    const res = await fetch('http://localhost:5000/api/auth/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: fname,
+        lastName: lname,
+        email, phone,
+        password: pass,
+        gender: document.querySelector('input[name="gender"]:checked')?.value || 'other'
+      })
+    });
+    const data = await res.json();
+    if (res.ok) {
+      success.style.display = 'block';
+      setTimeout(() => { window.location.href = 'login.html'; }, 2000);
+    } else {
+      err.style.display = 'block';
+      err.innerText = '❌ ' + data.message;
+    }
+  } catch (e) {
+    err.style.display = 'block';
+    err.innerText = '❌ Server error. Make sure backend is running!';
+  }
 }
 </script>
 </body>
