@@ -301,5 +301,15 @@ function addToCart() {
   alert('✅ Product added to cart!');
 }
 </script>
+async function loadProducts() {
+  try {
+    const res = await fetch('http://localhost:5000/api/products');
+    const data = await res.json();
+    console.log('Products loaded:', data.products);
+  } catch (e) {
+    console.log('Using static products');
+  }
+}
+loadProducts();
 </body>
 </html>

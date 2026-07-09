@@ -295,7 +295,9 @@ async function doRegister() {
         gender: document.querySelector('input[name="gender"]:checked')?.value || 'other'
       })
     });
+
     const data = await res.json();
+
     if (res.ok) {
       success.style.display = 'block';
       setTimeout(() => { window.location.href = 'login.html'; }, 2000);
@@ -305,7 +307,7 @@ async function doRegister() {
     }
   } catch (e) {
     err.style.display = 'block';
-    err.innerText = '❌ Server error. Make sure backend is running!';
+    err.innerText = '❌ Server error. Try again.';
   }
 }
 </script>
