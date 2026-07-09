@@ -1,0 +1,61 @@
+[9:13 pm, 08/07/2026] ★: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Post - Green Mart</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/blog.css"/>
+  <link rel="stylesheet" href="../css/blog-single.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="con…
+[9:15 pm, 08/07/2026] ★: /* POST BOX */
+.post-box { background: #fff; border-radius: 15px; padding: 35px; box-shadow: 0 5px 20px rgba(0,0,0,0.07); }
+.post-hero { font-size: 6rem; background: #E8F5E9; text-align: center; padding: 40px; border-radius: 12px; margin-bottom: 20px; }
+.post-title { font-size: 1.8rem; font-weight: 700; margin: 15px 0 10px; }
+.post-meta { display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.82rem; color: #999; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+.post-meta i { color: #2E7D32; margin-right: 4px; }
+
+/* POST CONTENT */
+.post-content h3 { font-size: 1.1rem; font-weight: 700; color: #2E7D32; margin: 25px 0 10px; }
+.post-content p { color: #555; font-size: 0.95rem; line-height: 1.8; margin-bottom: 15px; }
+.post-highlight { background: #E8F5E9; border-left: 4px solid #2E7D32; padding: 15px 20px; border-radius: 0 10px 10px 0; margin: 20px 0; font-size: 0.9rem; color: #333; }
+.post-conclusion { background: #F1F8E9; border-radius: 12px; padding: 20px 25px; margin-top: 25px; }
+.post-conclusion h4 { font-weight: 700; color: #2E7D32; margin-bottom: 10px; }
+.post-conclusion p { color: #555; margin: 0; }
+
+/* SHARE */
+.post-share { margin: 30px 0; padding: 20px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+.post-share h6 { font-weight: 700; margin-bottom: 12px; }
+.share-btns { display: flex; gap: 10px; }
+.share-fb { background: #1877F2; color: #fff; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; }
+.share-tw { background: #1DA1F2; color: #fff; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; }
+.share-wa { background: #25D366; color: #fff; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; }
+
+/* AUTHOR */
+.author-box { display: flex; gap: 20px; align-items: flex-start; background: #F9FBF7; border-radius: 12px; padding: 20px; margin: 25px 0; }
+.author-avatar { font-size: 3rem; }
+.author-box h6 { font-weight: 700; margin-bottom: 3px; }
+.author-role { color: #2E7D32; font-size: 0.85rem; margin-bottom: 8px; }
+.author-box p { color: #666; font-size: 0.88rem; margin: 0; }
+
+/* COMMENTS */
+.comments-section { margin-top: 30px; }
+.comments-section h4 { font-weight: 700; margin-bottom: 20px; }
+.comment { display: flex; gap: 15px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #f0f0f0; }
+.comment-avatar { font-size: 2rem; }
+.comment-body h6 { font-weight: 700; margin-bottom: 5px; }
+.comment-body h6 span { color: #999; font-size: 0.78rem; font-weight: 400; margin-left: 10px; }
+.comment-body p { color: #666; font-size: 0.88rem; margin: 0; }
+
+/* COMMENT FORM */
+.comment-form h5 { font-weight: 700; margin-bottom: 15px; }
+.form-input { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 12px 15px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; outline: none; }
+.form-input:focus { border-color: #2E7D32; }

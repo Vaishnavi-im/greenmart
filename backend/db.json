@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "id": 1783570989773,
+      "firstName": "Rahul",
+      "lastName": "Kumar",
+      "email": "user@greenmart.com",
+      "phone": "9876543210",
+      "password": "$2b$10$E6VhSv9qz2hPspzJqEiOeeqeYasR.ycOcGxAZIYFrjjS9VSJnfcCu",
+      "gender": "male",
+      "role": "user",
+      "walletBalance": 0,
+      "loyaltyPoints": 0
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Organic Broccoli",
+      "price": 49,
+      "originalPrice": 65,
+      "category": "vegetables",
+      "emoji": "🥦",
+      "stock": 100,
+      "rating": 5,
+      "reviews": 24,
+      "badge": "Organic"
+    },
+    {
+      "id": 2,
+      "name": "Red Apples",
+      "price": 120,
+      "originalPrice": 150,
+      "category": "fruits",
+      "emoji": "🍎",
+      "stock": 80,
+      "rating": 5,
+      "reviews": 18,
+      "badge": "Fresh"
+    },
+    {
+      "id": 3,
+      "name": "Organic Carrots",
+      "price": 35,
+      "originalPrice": 50,
+      "category": "vegetables",
+      "emoji": "🥕",
+      "stock": 120,
+      "rating": 4,
+      "reviews": 15,
+      "badge": "Local"
+    },
+    {
+      "id": 4,
+      "name": "Fresh Lemons",
+      "price": 30,
+      "originalPrice": 40,
+      "category": "fruits",
+      "emoji": "🍋",
+      "stock": 90,
+      "rating": 5,
+      "reviews": 20,
+      "badge": "Organic"
+    },
+    {
+      "id": 5,
+      "name": "Raw Honey",
+      "price": 299,
+      "originalPrice": 350,
+      "category": "honey",
+      "emoji": "🍯",
+      "stock": 50,
+      "rating": 5,
+      "reviews": 45,
+      "badge": "Organic"
+    },
+    {
+      "id": 6,
+      "name": "Spinach Leaves",
+      "price": 25,
+      "originalPrice": 35,
+      "category": "vegetables",
+      "emoji": "🥬",
+      "stock": 100,
+      "rating": 4,
+      "reviews": 12,
+      "badge": "Fresh"
+    },
+    {
+      "id": 7,
+      "name": "Cherry Tomatoes",
+      "price": 60,
+      "originalPrice": 80,
+      "category": "vegetables",
+      "emoji": "🍅",
+      "stock": 75,
+      "rating": 5,
+      "reviews": 30,
+      "badge": "Organic"
+    },
+    {
+      "id": 8,
+      "name": "Blueberries",
+      "price": 180,
+      "originalPrice": 220,
+      "category": "fruits",
+      "emoji": "🫐",
+      "stock": 40,
+      "rating": 5,
+      "reviews": 22,
+      "badge": "Fresh"
+    }
+  ],
+  "orders": []
+}

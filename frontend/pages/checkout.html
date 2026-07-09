@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Green Mart</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/checkout.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">🌿 <span>Green</span>Mart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop.html">🛒 Shop</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<section class="page-banner">
+  <div class="container text-center">
+    <h1>Check<span>out</span></h1>
+    <p>Home / Cart / Checkout</p>
+  </div>
+</section>
+
+<!-- CHECKOUT STEPS -->
+<div class="checkout-steps">
+  <div class="container">
+    <div class="steps-bar">
+      <div class="step done">
+        <div class="step-circle">✅</div>
+        <span>Cart</span>
+      </div>
+      <div class="step-line done"></div>
+      <div class="step active">
+        <div class="step-circle">2</div>
+        <span>Checkout</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <span>Confirm</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT CONTENT -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- LEFT - FORMS -->
+      <div class="col-md-7">
+
+        <!-- DELIVERY ADDRESS -->
+        <div class="checkout-box">
+          <h5><i class="fas fa-map-marker-alt"></i> Delivery Address</h5>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label>First Name</label>
+              <input type="text" class="form-input" placeholder="First name"/>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label>Last Name</label>
+              <input type="text" class="form-input" placeholder="Last name"/>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label>Phone Number</label>
+              <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX"/>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label>Email Address</label>
+              <input type="email" class="form-input" placeholder="your@email.com"/>
+            </div>
+            <div class="col-12 mb-3">
+              <label>Full Address</label>
+              <textarea class="form-input" rows="3" placeholder="House no, Street, Area..."></textarea>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>City</label>
+              <input type="text" class="form-input" placeholder="City"/>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>State</label>
+              <select class="form-input">
+                <option>Tamil Nadu</option>
+                <option>Kerala</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Maharashtra</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>Pincode</label>
+              <input type="text" class="form-input" placeholder="600001"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- DELIVERY SLOT -->
+        <div class="checkout-box mt-4">
+          <h5><i class="fas fa-clock"></i> Delivery Slot</h5>
+          <div class="slot-options">
+            <div class="slot-card active" onclick="selectSlot(this)">
+              <div>🌅</div>
+              <strong>Morning</strong>
+              <small>7AM - 11AM</small>
+            </div>
+            <div class="slot-card" onclick="selectSlot(this)">
+              <div>☀️</div>
+              <strong>Afternoon</strong>
+              <small>12PM - 4PM</small>
+            </div>
+            <div class="slot-card" onclick="selectSlot(this)">
+              <div>🌆</div>
+              <strong>Evening</strong>
+              <small>5PM - 8PM</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAYMENT METHOD -->
+        <div class="checkout-box mt-4">
+          <h5><i class="fas fa-credit-card"></i> Payment Method</h5>
+          <div class="payment-options">
+
+            <div class="payment-option active" onclick="selectPayment(this,'upi')">
+              <input type="radio" name="payment" checked/>
+              <span>📱 UPI Payment</span>
+            </div>
+            <div id="upiSection">
+              <input type="text" class="form-input mt-2" placeholder="Enter UPI ID (eg: name@upi)"/>
+            </div>
+
+            <div class="payment-option mt-3" onclick="selectPayment(this,'card')">
+              <input type="radio" name="payment"/>
+              <span>💳 Credit / Debit Card</span>
+            </div>
+            <div id="cardSection" style="display:none;">
+              <div class="row mt-2">
+                <div class="col-12 mb-2">
+                  <input type="text" class="form-input" placeholder="Card Number"/>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <input type="text" class="form-input" placeholder="MM/YY"/>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <input type="text" class="form-input" placeholder="CVV"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment-option mt-3" onclick="selectPayment(this,'netbanking')">
+              <input type="radio" name="payment"/>
+              <span>🏦 Net Banking</span>
+            </div>
+
+            <div class="payment-option mt-3" onclick="selectPayment(this,'cod')">
+              <input type="radio" name="payment"/>
+              <span>💰 Cash on Delivery</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT - ORDER SUMMARY -->
+      <div class="col-md-5">
+        <div class="summary-box">
+          <h5>Order Summary</h5>
+
+          <!-- ITEMS -->
+          <div class="order-item">
+            <div class="order-img">🥦</div>
+            <div class="order-info">
+              <h6>Organic Broccoli</h6>
+              <small>500g × 1</small>
+            </div>
+            <div class="order-price">₹49</div>
+          </div>
+          <div class="order-item">
+            <div class="order-img">🍎</div>
+            <div class="order-info">
+              <h6>Red Apples</h6>
+              <small>1kg × 2</small>
+            </div>
+            <div class="order-price">₹240</div>
+          </div>
+          <div class="order-item">
+            <div class="order-img">🍯</div>
+            <div class="order-info">
+              <h6>Raw Honey</h6>
+              <small>250g × 1</small>
+            </div>
+            <div class="order-price">₹299</div>
+          </div>
+
+          <div class="summary-divider"></div>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>₹588</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery</span>
+            <span class="free-tag">FREE</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax (5%)</span>
+            <span>₹29</span>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-total">
+            <span>Total</span>
+            <span>₹617</span>
+          </div>
+
+          <!-- PLACE ORDER -->
+          <a href="order-confirm.html" class="btn-place-order" onclick="placeOrder()">
+            ✅ Place Order
+          </a>
+
+          <div class="secure-note">
+            <i class="fas fa-lock"></i> 100% Secure & Encrypted Payment
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>🌿 GreenMart</h5>
+        <p>Your trusted organic store for healthy living.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> hello@greenmart.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu</p>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p>© 2024 GreenMart. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function selectSlot(el) {
+  document.querySelectorAll('.slot-card').forEach(s => s.classList.remove('active'));
+  el.classList.add('active');
+}
+function selectPayment(el, type) {
+  document.querySelectorAll('.payment-option').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('upiSection').style.display = 'none';
+  document.getElementById('cardSection').style.display = 'none';
+  if (type === 'upi') document.getElementById('upiSection').style.display = 'block';
+  if (type === 'card') document.getElementById('cardSection').style.display = 'block';
+}
+function placeOrder() {
+  return true;
+}
+</script>
+</body>
+</html>

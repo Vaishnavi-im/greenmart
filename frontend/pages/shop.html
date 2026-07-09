@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - Green Mart</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/shop.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">🌿 <span>Green</span>Mart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop.html">🛒 Shop</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<section class="page-banner">
+  <div class="container text-center">
+    <h1>Our <span>Shop</span></h1>
+    <p>Home / Shop</p>
+  </div>
+</section>
+
+<!-- SHOP CONTENT -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- SIDEBAR FILTER -->
+      <div class="col-md-3">
+
+        <div class="filter-box">
+          <h5>Categories</h5>
+          <ul class="filter-list">
+            <li><a href="#" class="active">All Products (24)</a></li>
+            <li><a href="#">🥦 Vegetables (8)</a></li>
+            <li><a href="#">🍎 Fruits (6)</a></li>
+            <li><a href="#">🥛 Dairy (4)</a></li>
+            <li><a href="#">🌾 Grains (3)</a></li>
+            <li><a href="#">🍯 Honey & Jams (3)</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-box mt-4">
+          <h5>Price Range</h5>
+          <input type="range" min="0" max="500" value="500" class="price-range" id="priceRange"
+            oninput="document.getElementById('priceVal').innerText='₹'+this.value"/>
+          <div class="price-label">Up to: <strong id="priceVal">₹500</strong></div>
+        </div>
+
+        <div class="filter-box mt-4">
+          <h5>Rating</h5>
+          <ul class="filter-list">
+            <li><a href="#">⭐⭐⭐⭐⭐ (12)</a></li>
+            <li><a href="#">⭐⭐⭐⭐ (8)</a></li>
+            <li><a href="#">⭐⭐⭐ (4)</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-box mt-4">
+          <h5>Tags</h5>
+          <div class="tags-box">
+            <a href="#">Organic</a>
+            <a href="#">Fresh</a>
+            <a href="#">Local</a>
+            <a href="#">Seasonal</a>
+            <a href="#">Vegan</a>
+            <a href="#">Gluten Free</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PRODUCTS GRID -->
+      <div class="col-md-9">
+
+        <!-- SORT BAR -->
+        <div class="sort-bar">
+          <p>Showing <strong>24 products</strong></p>
+          <select class="sort-select">
+            <option>Sort by: Latest</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Best Rating</option>
+          </select>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="shop-card">
+              <div class="shop-badge">Organic</div>
+              <div class="shop-img">🥦</div>
+              <div class="shop-body">
+                <h6>Organic Broccoli</h6>
+                <div class="shop-rating">⭐⭐⭐⭐⭐ (24)</div>
+                <div class="shop-price">₹49 <span>₹65</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart" onclick="addToCart()">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="shop-card">
+              <div class="shop-badge">Fresh</div>
+              <div class="shop-img">🍎</div>
+              <div class="shop-body">
+                <h6>Red Apples</h6>
+                <div class="shop-rating">⭐⭐⭐⭐⭐ (18)</div>
+                <div class="shop-price">₹120 <span>₹150</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="shop-card">
+              <div class="shop-badge">Local</div>
+              <div class="shop-img">🥕</div>
+              <div class="shop-body">
+                <h6>Organic Carrots</h6>
+                <div class="shop-rating">⭐⭐⭐⭐ (15)</div>
+                <div class="shop-price">₹35 <span>₹50</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="shop-card">
+              <div class="shop-badge">Organic</div>
+              <div class="shop-img">🍋</div>
+              <div class="shop-body">
+                <h6>Fresh Lemons</h6>
+                <div class="shop-rating">⭐⭐⭐⭐⭐ (20)</div>
+                <div class="shop-price">₹30 <span>₹40</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="shop-card">
+              <div class="shop-badge">Fresh</div>
+              <div class="shop-img">🥬</div>
+              <div class="shop-body">
+                <h6>Spinach Leaves</h6>
+                <div class="shop-rating">⭐⭐⭐⭐ (12)</div>
+                <div class="shop-price">₹25 <span>₹35</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="shop-card">
+              <div class="shop-badge">Organic</div>
+              <div class="shop-img">🍅</div>
+              <div class="shop-body">
+                <h6>Cherry Tomatoes</h6>
+                <div class="shop-rating">⭐⭐⭐⭐⭐ (30)</div>
+                <div class="shop-price">₹60 <span>₹80</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="shop-card">
+              <div class="shop-badge">Local</div>
+              <div class="shop-img">🥑</div>
+              <div class="shop-body">
+                <h6>Avocados</h6>
+                <div class="shop-rating">⭐⭐⭐⭐ (9)</div>
+                <div class="shop-price">₹90 <span>₹120</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="shop-card">
+              <div class="shop-badge">Organic</div>
+              <div class="shop-img">🍯</div>
+              <div class="shop-body">
+                <h6>Raw Honey</h6>
+                <div class="shop-rating">⭐⭐⭐⭐⭐ (45)</div>
+                <div class="shop-price">₹299 <span>₹350</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="shop-card">
+              <div class="shop-badge">Fresh</div>
+              <div class="shop-img">🫐</div>
+              <div class="shop-body">
+                <h6>Blueberries</h6>
+                <div class="shop-rating">⭐⭐⭐⭐⭐ (22)</div>
+                <div class="shop-price">₹180 <span>₹220</span></div>
+                <div class="shop-btns">
+                  <a href="product-detail.html" class="btn-view">View</a>
+                  <a href="cart.html" class="btn-cart">🛒 Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination-box mt-4">
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+          <a href="#" class="page-btn">Next →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>🌿 GreenMart</h5>
+        <p>Your trusted organic store for healthy living.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> hello@greenmart.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu</p>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p>© 2024 GreenMart. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function addToCart() {
+  alert('✅ Product added to cart!');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* BANNER */
+.page-banner { background: linear-gradient(135deg, #E8F5E9, #C8E6C9); padding: 60px 0; }
+.page-banner h1 { font-size: 2.5rem; font-weight: 700; }
+.page-banner h1 span { color: #2E7D32; }
+.page-banner p { color: #555; }
+
+/* WISHLIST HEADER */
+.wishlist-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.wishlist-header h5 { font-weight: 700; margin: 0; }
+.btn-clear-all { background: #FFF0F0; color: #e53935; border: none; padding: 8px 18px; border-radius: 8px; font-family: 'Poppins',sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+.btn-clear-all:hover { background: #e53935; color: #fff; }
+
+/* WISH CARD */
+.wish-card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.07); margin-bottom: 25px; position: relative; transition: transform 0.3s; }
+.wish-card:hover { transform: translateY(-5px); }
+.wish-remove { position: absolute; top: 10px; right: 10px; background: #FFF0F0; border: none; color: #e53935; width: 28px; height: 28px; border-radius: 50%; font-size: 0.75rem; cursor: pointer; font-weight: 700; z-index: 1; }
+.wish-remove:hover { background: #e53935; color: #fff; }
+.wish-badge { position: absolute; top: 10px; left: 10px; background: #2E7D32; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+.wish-img { font-size: 4rem; background: #E8F5E9; text-align: center; padding: 25px; }
+.wish-body { padding: 15px; }
+.wish-body h6 { font-weight: 700; margin-bottom: 5px; font-size: 0.92rem; }
+.wish-rating { font-size: 0.75rem; color: #888; margin-bottom: 8px; }
+.wish-price { font-size: 1.1rem; font-weight: 700; color: #2E7D32; margin-bottom: 5px; }
+.wish-price span { text-decoration: line-through; color: #aaa; font-size: 0.82rem; margin-left: 5px; }
+.stock-status { font-size: 0.78rem; font-weight: 600; margin-bottom: 12px; }
+.instock { color: #2E7D32; }
+.outstock { color: #e53935; }
+
+/* WISH ACTIONS */
+.wish-actions { display: flex; gap: 8px; }
+.btn-add-wish { flex: 1; background: #2E7D32; color: #fff; text-align: center; padding: 8px; border-radius: 8px; text-decoration: none; font-size: 0.8rem; font-weight: 600; }
+.btn-add-wish:hover { background: #1B5E20; color: #fff; }
+.btn-view-wish { flex: 1; border: 1px solid #2E7D32; color: #2E7D32; text-align: center; padding: 8px; border-radius: 8px; text-decoration: none; font-size: 0.8rem; font-weight: 600; }
+.btn-view-wish:hover { background: #2E7D32; color: #fff; }
+.btn-notify { flex: 1; background: #FFF9C4; color: #F57F17; border: none; padding: 8px; border-radius: 8px; font-family: 'Poppins',sans-serif; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+
+/* EMPTY STATE */
+.empty-wishlist { text-align: center; padding: 60px 20px; }
+.empty-icon { font-size: 5rem; margin-bottom: 20px; }
+.empty-wishlist h4 { font-weight: 700; margin-bottom: 10px; }
+.empty-wishlist p { color: #888; margin-bottom: 25px; }
+
+/* WISHLIST FOOTER */
+.wishlist-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee; }
+.btn-add-all { background: #2E7D32; color: #fff; border: none; padding: 12px 30px; border-radius: 30px; font-family: 'Poppins',sans-serif; font-weight: 700; font-size: 0.95rem; cursor: pointer; }
+.btn-add-all:hover { background: #1B5E20; }
+
+/* RECOMMENDED */
+.recommended { background: #F1F8E9; }
+.rec-card { background: #fff; border-radius: 15px; padding: 20px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.07); margin-bottom: 20px; transition: transform 0.3s; }
+.rec-card:hover { transform: translateY(-5px); }
+.rec-img { font-size: 3.5rem; background: #E8F5E9; padding: 15px; border-radius: 10px; margin-bottom: 12px; }
+.rec-card h6 { font-weight: 700; margin-bottom: 5px; }
+.rec-price { color: #2E7D32; font-weight: 700; margin-bottom: 12px; }
+.btn-rec { display: block; border: 2px solid #2E7D32; color: #2E7D32; padding: 7px; border-radius: 8px; text-decoration: none; font-size: 0.82rem; font-weight: 600; }
+.btn-rec:hover { background: #2E7D32; color: #fff; }

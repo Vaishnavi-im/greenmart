@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Detail - Green Mart</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/product-detail.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">🌿 <span>Green</span>Mart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop.html">🛒 Shop</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+  <div class="container">
+    <a href="../index.html">Home</a> /
+    <a href="shop.html">Shop</a> /
+    <span>Organic Broccoli</span>
+  </div>
+</div>
+
+<!-- PRODUCT DETAIL -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- PRODUCT IMAGES -->
+      <div class="col-md-5">
+        <div class="product-main-img">🥦</div>
+        <div class="product-thumbs">
+          <div class="thumb active">🥦</div>
+          <div class="thumb">🌿</div>
+          <div class="thumb">🧺</div>
+          <div class="thumb">🌱</div>
+        </div>
+      </div>
+
+      <!-- PRODUCT INFO -->
+      <div class="col-md-7">
+        <div class="product-info">
+          <div class="product-badges">
+            <span class="badge-organic">✅ Certified Organic</span>
+            <span class="badge-stock">In Stock</span>
+          </div>
+
+          <h1 class="product-title">Organic Broccoli</h1>
+          <div class="product-rating">
+            ⭐⭐⭐⭐⭐ <span>(24 Reviews)</span>
+          </div>
+
+          <div class="product-price">
+            ₹49 <span class="old-price">₹65</span>
+            <span class="discount-tag">25% OFF</span>
+          </div>
+
+          <p class="product-desc">Fresh, certified organic broccoli sourced directly from local farms. Rich in vitamins C and K, fiber, and powerful antioxidants. Perfect for salads, stir-fries, and soups.</p>
+
+          <!-- HIGHLIGHTS -->
+          <div class="product-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-leaf"></i> 100% Organic
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-truck"></i> Free Delivery above ₹499
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-undo"></i> 7 Day Return
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-shield-alt"></i> NPOP Certified
+            </div>
+          </div>
+
+          <!-- QUANTITY -->
+          <div class="quantity-box">
+            <label>Quantity:</label>
+            <div class="qty-control">
+              <button onclick="changeQty(-1)">−</button>
+              <span id="qty">1</span>
+              <button onclick="changeQty(1)">+</button>
+            </div>
+            <span class="qty-unit">500g per pack</span>
+          </div>
+
+          <!-- ACTION BUTTONS -->
+          <div class="product-actions">
+            <a href="cart.html" class="btn-add-cart" onclick="addCart()">
+              🛒 Add to Cart
+            </a>
+            <a href="checkout.html" class="btn-buy-now">
+              ⚡ Buy Now
+            </a>
+            <a href="wishlist.html" class="btn-wishlist">
+              ❤️
+            </a>
+          </div>
+
+          <!-- PRODUCT META -->
+          <div class="product-meta-info">
+            <p><strong>Category:</strong> Vegetables</p>
+            <p><strong>SKU:</strong> GM-VEG-001</p>
+            <p><strong>Weight:</strong> 500g</p>
+            <p><strong>Origin:</strong> Tamil Nadu, India</p>
+            <p><strong>Tags:</strong> Organic, Fresh, Vegetable, Healthy</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="product-tabs mt-5">
+      <div class="tab-btns">
+        <button class="tab-btn active" onclick="showTab('description')">Description</button>
+        <button class="tab-btn" onclick="showTab('nutrition')">Nutrition Facts</button>
+        <button class="tab-btn" onclick="showTab('reviews')">Reviews (24)</button>
+      </div>
+
+      <!-- DESCRIPTION TAB -->
+      <div class="tab-content-box" id="description">
+        <h5>Product Description</h5>
+        <p>Our organic broccoli is grown using sustainable farming practices without the use of synthetic pesticides or fertilizers. Each head is carefully harvested at peak freshness to ensure maximum nutritional value.</p>
+        <p>Broccoli is one of the most nutrient-dense vegetables available. It contains high amounts of vitamin C, vitamin K, iron, and potassium. It also contains more protein than most other vegetables.</p>
+        <ul class="desc-list">
+          <li>✅ Grown without synthetic chemicals</li>
+          <li>✅ Harvested fresh and delivered within 24 hours</li>
+          <li>✅ NPOP certified organic</li>
+          <li>✅ Supports local Tamil Nadu farmers</li>
+          <li>✅ Eco-friendly packaging</li>
+        </ul>
+      </div>
+
+      <!-- NUTRITION TAB -->
+      <div class="tab-content-box" id="nutrition" style="display:none;">
+        <h5>Nutrition Facts <small>(per 100g)</small></h5>
+        <div class="nutrition-table">
+          <div class="nutrition-row">
+            <span>Calories</span><span>34 kcal</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Protein</span><span>2.8g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Carbohydrates</span><span>6.6g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Fiber</span><span>2.6g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Fat</span><span>0.4g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Vitamin C</span><span>89.2mg</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Vitamin K</span><span>101.6mcg</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Iron</span><span>0.7mg</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REVIEWS TAB -->
+      <div class="tab-content-box" id="reviews" style="display:none;">
+        <h5>Customer Reviews</h5>
+        <div class="review-summary">
+          <div class="review-score">4.8</div>
+          <div>
+            <div>⭐⭐⭐⭐⭐</div>
+            <p>Based on 24 reviews</p>
+          </div>
+        </div>
+        <div class="review-item">
+          <div class="reviewer">👤 Rahul M.</div>
+          <div>⭐⭐⭐⭐⭐</div>
+          <p>Very fresh and crispy! Much better than supermarket broccoli. Will order again.</p>
+          <small>January 12, 2024</small>
+        </div>
+        <div class="review-item">
+          <div class="reviewer">👤 Anita K.</div>
+          <div>⭐⭐⭐⭐⭐</div>
+          <p>Excellent quality. You can taste the difference with organic produce. Highly recommend!</p>
+          <small>January 20, 2024</small>
+        </div>
+        <div class="review-item">
+          <div class="reviewer">👤 Suresh P.</div>
+          <div>⭐⭐⭐⭐</div>
+          <p>Good quality broccoli. Delivery was fast and packaging was eco-friendly. Happy customer!</p>
+          <small>February 5, 2024</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- RELATED PRODUCTS -->
+    <div class="mt-5">
+      <h2 class="section-title">Related <span>Products</span></h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="shop-card">
+            <div class="shop-img">🥬</div>
+            <div class="shop-body">
+              <h6>Spinach Leaves</h6>
+              <div class="shop-price">₹25 <span>₹35</span></div>
+              <a href="product-detail.html" class="btn-cart">🛒 Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="shop-card">
+            <div class="shop-img">🥕</div>
+            <div class="shop-body">
+              <h6>Organic Carrots</h6>
+              <div class="shop-price">₹35 <span>₹50</span></div>
+              <a href="product-detail.html" class="btn-cart">🛒 Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="shop-card">
+            <div class="shop-img">🍅</div>
+            <div class="shop-body">
+              <h6>Cherry Tomatoes</h6>
+              <div class="shop-price">₹60 <span>₹80</span></div>
+              <a href="product-detail.html" class="btn-cart">🛒 Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="shop-card">
+            <div class="shop-img">🥑</div>
+            <div class="shop-body">
+              <h6>Avocados</h6>
+              <div class="shop-price">₹90 <span>₹120</span></div>
+              <a href="product-detail.html" class="btn-cart">🛒 Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>🌿 GreenMart</h5>
+        <p>Your trusted organic store for healthy living.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> hello@greenmart.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu</p>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p>© 2024 GreenMart. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function changeQty(val) {
+  let qty = parseInt(document.getElementById('qty').innerText);
+  qty += val;
+  if (qty < 1) qty = 1;
+  document.getElementById('qty').innerText = qty;
+}
+function showTab(tab) {
+  document.querySelectorAll('.tab-content-box').forEach(t => t.style.display = 'none');
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(tab).style.display = 'block';
+  event.target.classList.add('active');
+}
+function addCart() {
+  alert('✅ Organic Broccoli added to cart!');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* DASHBOARD */
+.dashboard-section { background: #F9FBF7; padding: 40px 0; min-height: 85vh; }
+
+/* SIDEBAR */
+.dash-sidebar { background: #fff; border-radius: 15px; padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.07); position: sticky; top: 80px; }
+.dash-profile { text-align: center; padding-bottom: 20px; border-bottom: 1px solid #eee; margin-bottom: 15px; }
+.dash-avatar { font-size: 3.5rem; margin-bottom: 10px; }
+.dash-profile h6 { font-weight: 700; margin-bottom: 3px; }
+.dash-profile p { color: #888; font-size: 0.78rem; margin-bottom: 8px; }
+.member-badge { background: #E8F5E9; color: #2E7D32; font-size: 0.75rem; font-weight: 600; padding: 3px 12px; border-radius: 20px; }
+
+/* MENU */
+.dash-menu { list-style: none; padding: 0; margin: 0; }
+.dash-menu li { display: flex; align-items: center; gap: 10px; padding: 12px 15px; border-radius: 10px; cursor: pointer; font-size: 0.88rem; font-weight: 500; color: #555; transition: all 0.3s; margin-bottom: 3px; }
+.dash-menu li:hover { background: #E8F5E9; color: #2E7D32; }
+.dash-menu li.active { background: #2E7D32; color: #fff; }
+.dash-menu li i { width: 18px; }
+.logout-item a { color: #e53935; text-decoration: none; display: flex; align-items: center; gap: 10px; width: 100%; }
+.logout-item:hover { background: #FFF0F0 !important; }
+
+/* WELCOME */
+.dash-welcome { margin-bottom: 25px; }
+.dash-welcome h4 { font-size: 1.5rem; font-weight: 700; margin-bottom: 5px; }
+.dash-welcome h4 span { color: #2E7D32; }
+.dash-welcome p { color: #888; font-size: 0.9rem; margin: 0; }
+
+/* STAT CARDS */
+.stat-card { background: #fff; border-radius: 15px; padding: 20px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.07); margin-bottom: 20px; }
+.stat-icon { font-size: 2rem; margin-bottom: 8px; }
+.stat-card h3 { font-size: 1.8rem; font-weight: 700; color: #2E7D32; margin-bottom: 3px; }
+.stat-card p { color: #888; font-size: 0.82rem; margin: 0; }
+
+/* DASH BOX */
+.dash-box { background: #fff; border-radius: 15px; padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.07); }
+.dash-box-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.dash-box-header h5 { font-weight: 700; margin: 0; }
+.dash-box-header a { color: #2E7D32; font-size: 0.85rem; font-weight: 600; text-decoration: none; }
+
+/* ORDER TABLE */
+.order-table { width: 100%; }
+.order-row { display: grid; grid-template-columns: 2fr 1.5fr 1fr 1.2fr 0.8fr; padding: 12px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.85rem; align-items: center; }
+.order-row.header { font-weight: 700; color: #888; font-size: 0.78rem; border-bottom: 2px solid #E8F5E9; }
+.status { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+.status.delivered { background: #E8F5E9; color: #2E7D32; }
+.status.processing { background: #FFF9C4; color: #F57F17; }
+.status.cancelled { background: #FFF0F0; color: #e53935; }
+.view-btn { color: #2E7D32; font-size: 0.82rem; font-weight: 600; text-decoration: none; }
+
+/* QUICK ACTIONS */
+.quick-actions { display: flex; gap: 15px; }
+.quick-action { flex: 1; background: #E8F5E9; border-radius: 12px; padding: 20px 10px; text-align: center; text-decoration: none; color: #333; transition: all 0.3s; }
+.quick-action div { font-size: 2rem; margin-bottom: 8px; }
+.quick-action span { font-size: 0.82rem; font-weight: 600; }
+.quick-action:hover { background: #2E7D32; color: #fff; }
+
+/* WISHLIST */
+.wish-card { background: #fff; border-radius: 15px; padding: 20px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.07); margin-bottom: 20px; }
+.wish-img { font-size: 3rem; background: #E8F5E9; padding: 15px; border-radius: 10px; margin-bottom: 10px; }
+.wish-card h6 { font-weight: 700; margin-bottom: 5px; }
+.wish-price { color: #2E7D32; font-weight: 700; margin-bottom: 12px; }
+.wish-btns { display: flex; gap: 8px; }
+.btn-cart-sm { flex: 1; background: #2E7D32; color: #fff; padding: 7px; border-radius: 8px; text-decoration: none; font-size: 0.8rem; font-weight: 600; text-align: center; }
+.btn-remove-wish { background: #FFF0F0; border: none; color: #e53935; padding: 7px 12px; border-radius: 8px; cursor: pointer; }
+
+/* ADDRESS */
+.address-card { background: #fff; border-radius: 15px; padding: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.07); position: relative; margin-bottom: 15px; }
+.address-card.default { border: 2px solid #2E7D32; }
+.address-badge { position: absolute; top: -10px; left: 15px; background: #2E7D32; color: #fff; font-size: 0.72rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; }
+.address-card h6 { font-weight: 700; margin-bottom: 8px; }
+.address-card p { color: #666; font-size: 0.85rem; line-height: 1.7; margin-bottom: 12px; }
+.address-btns { display: flex; gap: 8px; }
+.btn-edit-addr { background: #E8F5E9; color: #2E7D32; border: none; padding: 6px 16px; border-radius: 8px; font-family: 'Poppins',sans-serif; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+.btn-del-addr { background: #FFF0F0; color: #e53935; border: none; padding: 6px 16px; border-radius: 8px; font-family: 'Poppins',sans-serif; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+.address-add { background: #F1F8E9; border: 2px dashed #A5D6A7; border-radius: 15px; padding: 30px; text-align: center; cursor: pointer; color: #2E7D32; font-weight: 600; }
+.address-add div { font-size: 2rem; margin-bottom: 8px; }
+
+/* PROFILE FORM */
+.form-input { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 11px 14px; font-family: 'Poppins',sans-serif; font-size: 0.88rem; outline: none; background: #F9FBF7; margin-bottom: 5px; }
+.form-input:focus { border-color: #2E7D32; background: #fff; }
+label { font-size: 0.82rem; font-weight: 600; color: #444; margin-bottom: 5px; display: block; }
+.btn-save { background: #2E7D32; color: #fff; border: none; padding: 11px 30px; border-radius: 30px; font-family: 'Poppins',sans-serif; font-weight: 600; cursor: pointer; font-size: 0.92rem; }
+.btn-save:hover { background: #1B5E20; }
+
+/* WALLET */
+.wallet-card { background: #fff; border-radius: 15px; padding: 30px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.07); margin-bottom: 20px; }
+.wallet-card.points { background: linear-gradient(135deg, #E8F5E9, #C8E6C9); }
+.wallet-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.wallet-card h6 { font-weight: 700; color: #555; margin-bottom: 8px; }
+.wallet-amount { font-size: 2rem; font-weight: 700; color: #2E7D32; margin-bottom: 15px; }
+.btn-add-money { background: #2E7D32; color: #fff; border: none; padding: 10px 25px; border-radius: 30px; font-family: 'Poppins',sans-serif; font-weight: 600; cursor: pointer; }
+.points-note { color: #666; font-size: 0.82rem; margin: 0; }
+
+/* SETTINGS */
+.settings-title { font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #E8F5E9; }
+.setting-row { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #f0f0f0; }
+.setting-row strong { display: block; font-size: 0.9rem; margin-bottom: 3px; }
+.setting-row p { color: #888; font-size: 0.78rem; margin: 0; }
+.toggle-switch { position: relative; width: 46px; height: 24px; flex-shrink: 0; }
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+.toggle-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #ddd; border-radius: 24px; transition: 0.3s; }
+.toggle-slider:before { position: absolute; content: ''; height: 18px; width: 18px; left: 3px; bottom: 3px; background: #fff; border-radius: 50%; transition: 0.3s; }
+.toggle-switch input:checked + .toggle-slider { background: #2E7D32; }
+.toggle-switch input:checked + .toggle-slider:before { transform: translateX(22px); }
